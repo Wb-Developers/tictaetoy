@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TIC-TAE-TOY</title>
+    <title>Document</title>
 </head>
+
 <body>
+    <div class="outline"></div>
     <div class="container">
-        <div class="heading"><h1>TIK TAK TOY GAME</h1>
-            <p></p></div>
+        <div class="playerName">
+            <div>
+                <label>Player X:</label>
+                <input id='inputX' placeholder="Enter Name Of Player X"/>
+            </div>
+            <div>
+                <label>Player O:</label>
+                <input id='inputO' placeholder="Enter Name Of Player O" />
+            </div>
+            <button onclick='handleEnter()'>Enter</button>
+        </div>
+        <div class="heading">
+            <h1>TIK TAK TOY GAME</h1>
+            <p></p>
+        </div>
         <div class="box_container">
-            <button class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button class="boxes"></button>
+            <button class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button
+                class="boxes"></button><button class="boxes"></button><button class="boxes"></button><button
+                class="boxes"></button><button class="boxes"></button><button class="boxes"></button>
         </div>
         <button class="reset">RESET</button>
         <div class="winner">
@@ -20,4 +38,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
