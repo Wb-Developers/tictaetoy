@@ -1,5 +1,22 @@
 let boxes = document.querySelectorAll(".boxes");
 let turnX = true;
+
+//
+  let input1;
+  let input2;
+  let player1;
+  let player2;
+let inputX = document.querySelector("#inputX");
+let inputO = document.querySelector("#inputO");
+function handleEnter(){
+    document.querySelector('.outline').style.display = 'none';
+    document.querySelector('.playerName').style.display = 'none';
+    input1 = inputX.value;
+    input2= inputO.value;
+     player1 = input1;
+     player2 = input2;
+
+
 const winPatterns = [
     [0,1,2],
     [0,3,6],
@@ -11,8 +28,6 @@ const winPatterns = [
     [6,7,8]
 ];
 
-let player1 = prompt('Enter Name Of Player Takes X');
-let player2 = prompt('Enter Name Of Player Takes O');
 let guid = document.querySelector(".heading p");
 guid.innerText = `First Turn Is of ${player1}`;
 
@@ -34,9 +49,9 @@ reset.addEventListener("click",()=>{
 const winner =()=>{
    document.querySelector(".winner").style.display = "flex";
   if (turnX) {
-     document.querySelector(".winner_heading").innerText = `winner ${player1}(O)`
+     document.querySelector(".winner_heading").innerText = `winner ${player2}(O)`
   }else{
-    document.querySelector(".winner_heading").innerText = `winner ${player2}(X)`
+    document.querySelector(".winner_heading").innerText = `winner ${player1}(X)`
    
   };
  disableBtn();
@@ -72,3 +87,6 @@ box.disabled = true;
 
     })
 })
+
+
+}
