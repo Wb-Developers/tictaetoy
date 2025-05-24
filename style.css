@@ -137,7 +137,7 @@ body {
     padding: 5px;
 }
 
-@media (max-width:380px) {
+@media (max-width:480px) {
     .box_container {
         height: 36vh;
         width: 36vh;
